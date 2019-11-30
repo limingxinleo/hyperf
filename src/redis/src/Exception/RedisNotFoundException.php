@@ -10,13 +10,8 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Hyperf\Metric\Adapter\Prometheus;
+namespace Hyperf\Redis\Exception;
 
-class Constants
+class RedisNotFoundException extends \RuntimeException
 {
-    const SCRAPE_MODE = 1;
-
-    const PUSH_MODE = 2;
-
-    const CUSTOM_MODE = 3;
 }

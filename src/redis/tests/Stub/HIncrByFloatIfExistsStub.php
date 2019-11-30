@@ -10,13 +10,11 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Hyperf\Metric\Adapter\Prometheus;
+namespace HyperfTest\Redis\Stub;
 
-class Constants
+use Hyperf\Redis\Lua\Hash\HIncrByFloatIfExists;
+
+class HIncrByFloatIfExistsStub extends HIncrByFloatIfExists
 {
-    const SCRAPE_MODE = 1;
-
-    const PUSH_MODE = 2;
-
-    const CUSTOM_MODE = 3;
+    protected $sha = 'xxxx';
 }

@@ -10,13 +10,13 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Hyperf\Metric\Adapter\Prometheus;
+namespace Hyperf\Redis\Lua;
 
-class Constants
+interface ScriptInterface
 {
-    const SCRAPE_MODE = 1;
+    public function getScript(): string;
 
-    const PUSH_MODE = 2;
+    public function format($data);
 
-    const CUSTOM_MODE = 3;
+    public function eval(array $arguments = [], $sha = true);
 }
