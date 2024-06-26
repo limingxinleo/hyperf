@@ -111,6 +111,7 @@ return (new Config())
             ->exclude('public')
             ->exclude('runtime')
             ->exclude('vendor')
+            ->exclude(['src/nacos/src/Protobuf/GPBMetadata', 'src/nacos/src/Protobuf/Any.php', 'src/nacos/src/Protobuf/Metadata.php', 'src/nacos/src/Protobuf/Payload.php'])
             ->in(__DIR__)
     )
     ->setUsingCache(false);
