@@ -8,6 +8,10 @@
 - [#7698](https://github.com/hyperf/hyperf/pull/7698) Added `Pool::flushAll()` and `PoolFactory::flushAll()` methods to close all pool connections.
 - [#7699](https://github.com/hyperf/hyperf/pull/7699) Added methods `whereJsonContainsKey()`, `orWhereJsonContainsKey()`, `whereJsonDoesntContainKey()`, `orWhereJsonDoesntContainKey()` for Query Builder.
 
+## Optimized
+
+- [#7687](https://github.com/hyperf/hyperf/pull/7687) Optimized handling of `ValidationException` in JSON-RPC core middleware to properly return `INVALID_PARAMS` error responses.
+
 # v3.1.65 - 2025-12-04
 
 ## Added
