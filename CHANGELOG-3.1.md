@@ -17,6 +17,10 @@
 
 - [#7682](https://github.com/hyperf/hyperf/pull/7682) Fixed incorrect return type for `Blueprint::foreign()` which caused static analysis errors when chaining `references()`, `on()`, etc.
 
+## Optimized
+
+- [#7675](https://github.com/hyperf/hyperf/pull/7675) Removed redundant timer cleanup code from metric listeners since the Timer component now handles cleanup automatically.
+
 # v3.1.65 - 2025-12-04
 
 ## Added
