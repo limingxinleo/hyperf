@@ -13,6 +13,10 @@
 
 - [#7687](https://github.com/hyperf/hyperf/pull/7687) Optimized handling of `ValidationException` in JSON-RPC core middleware to properly return `INVALID_PARAMS` error responses.
 
+## Fixed
+
+- [#7682](https://github.com/hyperf/hyperf/pull/7682) Fixed incorrect return type for `Blueprint::foreign()` which caused static analysis errors when chaining `references()`, `on()`, etc.
+
 # v3.1.65 - 2025-12-04
 
 ## Added
