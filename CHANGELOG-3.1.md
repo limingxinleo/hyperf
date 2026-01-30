@@ -3,6 +3,7 @@
 ## Fixed
 
 - [#7703](https://github.com/hyperf/hyperf/pull/7703) Fixed bug that the default ttl cannot work for memory driver of `hyperf/cache`.
+- [#7705](https://github.com/hyperf/hyperf/pull/7705) Fixed bug that `eachById` cannot work for `Hyperf\Database\Query\Builder`.
 
 # v3.1.66 - 2026-01-25
 
